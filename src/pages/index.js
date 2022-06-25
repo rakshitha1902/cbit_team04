@@ -60,9 +60,9 @@ const Home = () => {
             <br/>
             <br/>
             <br/>
-            <Card border="light">
-              <ReactPlayer url='https://www.youtube.com/watch?v=ysz5S6PUM-U' />
-            </Card>
+            <ReactPlayer url='https://www.youtube.com/watch?v=ysz5S6PUM-U' />
+            <br/>
+            <ReactPlayer url='https://www.youtube.com/watch?v=ysz5S6PUM-U' />
             <br/>
             <br/>
             <br/>
