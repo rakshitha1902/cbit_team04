@@ -89,10 +89,7 @@ function Appointment() {
                                     <input type = 'checkbox' id = 'Apf' className = 'form-check-input' {... register('health problems')} value = 'React'/>
                                     <label htmlFor = 'Apf' className = 'form-check-label'>Academic Performance Pressue</label>
                                 </div>
-                                <div className = 'mb-3'>
-                                <label htmlFor = 'other' style = {styles.bold}>Other</label>
-                                <textarea id = 'other' placeholder = 'Describe your problem'rows = '2' className = 'form-control' {... register('feedback')}></textarea>
-                                </div>
+                                
                             </div>
                             <button type = 'Request' className = 'mb-5 btn btn-success w-100'>Send Request</button>
                         </form>

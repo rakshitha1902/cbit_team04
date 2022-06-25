@@ -1,8 +1,47 @@
-import React from 'react'
+import React,{useState , useEffect} from 'react'
 import Form from 'react-bootstrap/Form';
-import {Container, Row, Col} from 'react-bootstrap'
+import {Container, Row, Col,Button} from 'react-bootstrap'
 
 function SignIn() {
+    const [userData, setUserData] = useState({ username: '',email: '', password: ''});
+   // const user = useSelector((state) => currentId ? state.users.find((s) => s._id === currentId) : null);
+   // const dispatch = useDispatch();
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        console.log(userData);
+        const user = JSON.stringify(userData);
+       // dispatch(createUser(userData));
+      
+        fetch("https://saday.herokuapp.com/login/", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: user
+          }).then(async (response) => {
+            if (response.status === 401) {
+              response.json().then((response) => {
+                alert(response.message)
+                window.location.href = "/login"
+              });
+            }
+            else if (response.status === 404) {
+              response.json().then((response) => {
+                alert("Please enter your details properly.")
+                window.location.href = "/login"
+              });
+            }
+            else if (response.status === 200) {
+              response.json().then((response) => {
+                const token = JSON.stringify(response.token)
+                localStorage.setItem('token', token);
+      
+                window.location.href = "/"
+              });
+            }
+          }).catch((error) => { console.log(error) });
+        }
     return (
         <Container>
             <Row>
@@ -13,13 +52,14 @@ function SignIn() {
                     <h1 alignItems='center'>Sign In</h1>
                     <Form className="p-5">
                         <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                            <Form.Label>Email address</Form.Label>
-                            <Form.Control type="email" placeholder="name@example.com" />
+                            <Form.Label>Username</Form.Label>
+                            <Form.Control type="text"  value={userData.username} onChange={(e) => setUserData({ ...userData, username: e.target.value})}/>
                         </Form.Group>
                         <Form.Group className="mb-3" controlId="exampleForm.ControlInput2">
                             <Form.Label>Password</Form.Label>
-                            <Form.Control type="password" placeholder="********" />
+                            <Form.Control type="password" placeholder="********" value={userData.password} onChange={(e) => setUserData({ ...userData, password: e.target.value})}/>
                         </Form.Group>
+                        <Button variant="primary" onClick={handleSubmit}>SignIn</Button>
                     </Form>
                 </Col>
             </Row>
