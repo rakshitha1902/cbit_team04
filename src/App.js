@@ -2,13 +2,14 @@ import React from "react";
 import Navbar from "./components/NavBar";
 import { BrowserRouter as Router, Switch, Route, Routes } from "react-router-dom";
 import Home from './pages';
-import About from './pages/about';
-import Contact from './pages/contact';
 import SignUp from './pages/signup';
 import SignIn from './pages/signin';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer from "./components/Footer";
 import Products from "./pages/products";
+import Podcasts from "./pages/podcasts";
+import Community from "./pages/community";
+import Doctor from "./pages/doctor";
 <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
@@ -26,7 +27,10 @@ function App() {
         <Route path="/podcasts" exact element={<Podcasts/>} />
         <Route path="/signin" element={<SignIn/>} />
         <Route path="/sign-up" element={<SignUp/>} />
+        <Route path="/community" element={<Community/>} />
+        <Route path="/doctor" element={<Doctor/>}/>
       </Routes>
+      
       <Footer fixed="bottom" />
     </Router>
   );

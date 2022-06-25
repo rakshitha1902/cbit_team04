@@ -17,11 +17,14 @@ const NavBar = () => {
                     <LinkContainer to="/">
                         <Nav.Link href="#home">Home</Nav.Link>
                     </LinkContainer>
-                    <LinkContainer to="/about">
-                        <Nav.Link href="#about">About</Nav.Link>
+                    <LinkContainer to="/products">
+                        <Nav.Link href="#products">Products</Nav.Link>
                     </LinkContainer>
-                    <LinkContainer to="/contact">
-                        <Nav.Link href="#contact">Contact</Nav.Link>
+                    <LinkContainer to="/podcasts">
+                        <Nav.Link href="#podcasts">Podcasts</Nav.Link>
+                    </LinkContainer>
+                    <LinkContainer to="/community">
+                        <Nav.Link href="#community">Community</Nav.Link>
                     </LinkContainer>
                     <LinkContainer to="/signin">
                         <Nav.Link href="#signin">SignIn</Nav.Link>
