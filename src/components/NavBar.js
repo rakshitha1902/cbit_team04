@@ -12,7 +12,7 @@ const NavBar = () => {
     return(
         <Navbar expand="lg" variant="dark" bg="dark">
             <Container>
-                <Navbar.Brand href="#home">Web Page</Navbar.Brand>
+                <Navbar.Brand href="#home">SADAY</Navbar.Brand>
                 <Nav className="justify-content-center" >
                     <LinkContainer to="/">
                         <Nav.Link href="#home">Home</Nav.Link>

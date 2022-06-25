@@ -4,6 +4,7 @@ import Posts from '../components/Posts';
 import { Card } from "react-bootstrap";
 import {Container, Row, Col,Button} from 'react-bootstrap'
 import { useNavigate } from 'react-router-dom';
+import ReactPlayer from 'react-player'
 
 const Home = () => {
   const navigate = useNavigate();
@@ -60,9 +61,11 @@ const Home = () => {
             <br/>
             <br/>
             <Card border="light">
-                  
+              <ReactPlayer url='https://www.youtube.com/watch?v=ysz5S6PUM-U' />
             </Card>
-            
+            <br/>
+            <br/>
+            <br/>
         </Container>
       
     </div>
