@@ -8,6 +8,7 @@ import SignUp from './pages/signup';
 import SignIn from './pages/signin';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer from "./components/Footer";
+import Products from "./pages/products";
 <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
@@ -21,8 +22,8 @@ function App() {
       <Navbar fixed="top" />
       <Routes>
         <Route path="/" exact element={<Home/>} />
-        <Route path="/about" element={<About/>} />
-        <Route path="/contact" element={<Contact/>} />
+        <Route path="/products" exact element={<Products/>} />
+        <Route path="/podcasts" exact element={<Podcasts/>} />
         <Route path="/signin" element={<SignIn/>} />
         <Route path="/sign-up" element={<SignUp/>} />
       </Routes>
