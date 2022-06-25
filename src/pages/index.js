@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import ControlledCarousel from '../components/ControlledCarousal';
-import Posts from '../components/Posts';
 import { Card } from "react-bootstrap";
 import {Container, Row, Col,Button} from 'react-bootstrap'
 import { useNavigate } from 'react-router-dom';
@@ -8,8 +7,8 @@ import ReactPlayer from 'react-player'
 
 const Home = () => {
   const navigate = useNavigate();
-  const navigateDoctor = () => {
-    navigate('/doctor');
+  const navigateAppointment = () => {
+    navigate('/appointment');
   }
   const navigateCommunity = () => {
     navigate('/community');
@@ -31,7 +30,7 @@ const Home = () => {
                                 <Card.Text >
                                 Here is great opportunity to book an appointment with one of our specialized doctors
                                 </Card.Text>
-                                <Button variant="primary" onClick={navigateDoctor}>Book Appointment</Button>
+                                <Button variant="primary" onClick={navigateAppointment}>Book Appointment</Button>
                         </Card.Body>
                     </Card>
                 </Col>
@@ -53,16 +52,22 @@ const Home = () => {
                     </Card>
                 </Col>
                 <Col>
-                    <img className="img-responsive d-block p-3" src="https://www.ef.com/wwen/blog/wp-content/uploads/2019/04/volunteers.jpg" alt=""/>
+                    <img className="img-responsive d-block p-3" src="https://s35691.pcdn.co/wp-content/uploads/2018/11/community.jpg" alt=""/>
                 </Col>
             </Row>
             <br/>
             <br/>
             <br/>
             <br/>
-            <ReactPlayer url='https://www.youtube.com/watch?v=ysz5S6PUM-U' />
+            <Container>
+              <h3>Our Podcasts</h3>
+              <br/>
+              <Row>
+                <Col><ReactPlayer width={500} height={350} url='https://www.youtube.com/watch?v=ysz5S6PUM-U' /></Col>
+                <Col><ReactPlayer width={500} height={350} url='https://www.youtube.com/watch?v=ysz5S6PUM-U' /></Col>
+              </Row>
+            </Container>
             <br/>
-            <ReactPlayer url='https://www.youtube.com/watch?v=ysz5S6PUM-U' />
             <br/>
             <br/>
             <br/>

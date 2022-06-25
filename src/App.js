@@ -9,7 +9,7 @@ import Footer from "./components/Footer";
 import Products from "./pages/products";
 import Podcasts from "./pages/podcasts";
 import Community from "./pages/community";
-import Doctor from "./pages/doctor";
+import Appointment from "./pages/appointment";
 <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
@@ -28,7 +28,8 @@ function App() {
         <Route path="/signin" element={<SignIn/>} />
         <Route path="/sign-up" element={<SignUp/>} />
         <Route path="/community" element={<Community/>} />
-        <Route path="/doctor" element={<Doctor/>}/>
+        <Route path="/appointment" element={<Appointment/>}/>
+
       </Routes>
       
       <Footer fixed="bottom" />

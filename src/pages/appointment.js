@@ -2,7 +2,7 @@ import React from 'react'
 import {useForm} from 'react-hook-form'
 import {Container, Row, Col} from 'react-bootstrap'
 
-function Doctor() {
+function Appointment() {
     const {register, handleSubmit, formState: {errors}} = useForm()
     const onFormSubmit = (userData) => {
         console.log(userData)
@@ -103,4 +103,4 @@ function Doctor() {
     )
 }
 
-export default Doctor
+export default Appointment
