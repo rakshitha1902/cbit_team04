@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+/*import React, { useState } from 'react';
 import ControlledCarousel from '../components/ControlledCarousal';
 import { Card } from "react-bootstrap";
 import {Container, Row, Col,Button} from 'react-bootstrap'
@@ -80,4 +80,4 @@ const Home = () => {
 
 
 
-export default Home;
+export default Home;*/
