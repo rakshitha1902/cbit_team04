@@ -58,7 +58,7 @@ function SignUp() {
                 </Col>
                 <Col>
                     <h1 alignItems='center'>Sign Up</h1>
-                    <Form className="p-5">
+                    <Form className="p-3">
                         <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
                             <Form.Label>Name</Form.Label>
                             <Form.Control type="text" value={userData.username} onChange={(e) => setUserData({ ...userData, username: e.target.value})}/>

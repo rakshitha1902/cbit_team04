@@ -85,7 +85,7 @@ li {
     padding: 0 3rem;
 }
 
-.container {
+.homecontainer {
     display: flex;
     justify-content: center;
     justify-items: center;
@@ -95,7 +95,7 @@ li {
 
 }
 
-.container-2 {
+.homecontainer-2 {
     max-width: 68rem;
     margin: 0 auto;
     padding: 1rem;
@@ -165,7 +165,7 @@ html {
 
 /***********showcase**************/
 #showcase {
-    background: url(../assets/images/hero.jpg) no-repeat center center/cover;
+    background: url('https://cdn.sanity.io/images/0vv8moc6/psychtimes/2401cc5a2e51ef82b53cd4144a328e437af607de-1000x667.jpg');
     max-width: 100%;
     height: 100vh;
     display: flex;
