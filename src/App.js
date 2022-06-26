@@ -10,6 +10,7 @@ import Products from "./pages/products";
 import Podcasts from "./pages/podcasts";
 import Community from "./pages/community";
 import Appointment from "./pages/appointment";
+import {Chat} from 'react-chat-popup'
 
 
 <link
@@ -35,7 +36,11 @@ function App() {
       
       <Footer fixed="bottom" />
     </Router>
+    
   );
+  
 }
+
+
 
 export default App;
