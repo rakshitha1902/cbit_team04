@@ -72,7 +72,7 @@ function SignUp() {
                             <Form.Control type="password" placeholder="********" value={userData.password} onChange={(e) => setUserData({ ...userData, password: e.target.value})}/>
                         </Form.Group>
                     </Form>
-                    <Button variant="primary" onClick={handleSubmit}>SignUp</Button>
+                    <Button variant="primary" className='m-3'onClick={handleSubmit}>SignUp</Button>
                 </Col>
             </Row>
         </Container>

@@ -10,7 +10,7 @@ import Products from "./pages/products";
 import Podcasts from "./pages/podcasts";
 import Community from "./pages/community";
 import Appointment from "./pages/appointment";
-import {Chat} from 'react-chat-popup'
+import Blogs from "./pages/Blogs";
 
 
 <link
@@ -32,6 +32,7 @@ function App() {
         <Route path="/sign-up" element={<SignUp/>} />
         <Route path="/community" element={<Community/>} />
         <Route path="/appointment" element={<Appointment/>}/>
+        <Route path="/blogs" element={<Blogs/>}/>
       </Routes>
       
       <Footer fixed="bottom" />

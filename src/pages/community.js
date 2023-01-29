@@ -14,7 +14,7 @@ function Community() {
     }
     return(
         <Container className = 'mt-3'>
-             <h1 className = 'text-center mb-4'>Join Our Community</h1>
+             <h1 className = 'text-center mb-4 text-color:blue'>JOIN OUR COMMUNITY</h1>
             <Row>
                 <Col>
                     <img className="img-responsive d-block p-3 w-100" src = "https://static.tildacdn.com/tild3938-3035-4366-a262-636536306663/community.png"/>

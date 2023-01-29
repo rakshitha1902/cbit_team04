@@ -3,45 +3,47 @@ import Form from 'react-bootstrap/Form';
 import {Container, Row, Col,Button} from 'react-bootstrap'
 
 function SignIn() {
-    const [userData, setUserData] = useState({ username: '',email: '', password: ''});
-   // const user = useSelector((state) => currentId ? state.users.find((s) => s._id === currentId) : null);
-   // const dispatch = useDispatch();
+  const [userData, setUserData] = useState({ username: '',email: '', password: ''});
+  // const user = useSelector((state) => currentId ? state.users.find((s) => s._id === currentId) : null);
+  // const dispatch = useDispatch();
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        console.log(userData);
-        const user = JSON.stringify(userData);
-       // dispatch(createUser(userData));
-      
-        fetch("https://saday.herokuapp.com/login/", {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-            },
-            body: user
-          }).then(async (response) => {
-            if (response.status === 401) {
-              response.json().then((response) => {
-                alert(response.message)
-                window.location.href = "/login"
-              });
-            }
-            else if (response.status === 404) {
-              response.json().then((response) => {
-                alert("Please enter your details properly.")
-                window.location.href = "/login"
-              });
-            }
-            else if (response.status === 200) {
-              response.json().then((response) => {
-                const token = JSON.stringify(response.token)
-                localStorage.setItem('token', token);
-      
-                window.location.href = "/"
-              });
-            }
-          }).catch((error) => { console.log(error) });
-        }
+   const handleSubmit = (e) => {
+       e.preventDefault();
+       console.log(userData);
+       const user = JSON.stringify(userData);
+      // dispatch(createUser(userData));
+     
+       fetch("https://saday.herokuapp.com/login/", {
+           method: "POST",
+           headers: {
+             "Content-Type": "application/json",
+           },
+           body: user
+         }).then(async (response) => {
+           if (response.status === 401) {
+             response.json().then((response) => {
+               alert(response.message)
+               window.location.href = "/login"
+             });
+           }
+           else if (response.status === 404) {
+             response.json().then((response) => {
+               alert("Please enter your details properly.")
+               window.location.href = "/login"
+             });
+           }
+           else if (response.status === 200) {
+             response.json().then((response) => {
+               const token = JSON.stringify(response.token)
+               localStorage.setItem('token', token);
+     
+               window.location.href = "/"
+             });
+           }
+         }).catch((error) => { console.log(error) });
+       }
+  
+
     return (
         <Container>
             <Row>

@@ -12,7 +12,7 @@ const NavBar = () => {
     return(
         <Navbar expand="lg" variant="dark" bg="dark">
             <Container>
-                <Navbar.Brand href="#home">SADAY</Navbar.Brand>
+                <Navbar.Brand href="#home">Mental Health</Navbar.Brand>
                 <Nav className="justify-content-center" >
                     <LinkContainer to="/">
                         <Nav.Link href="#home">Home</Nav.Link>
@@ -22,6 +22,9 @@ const NavBar = () => {
                     </LinkContainer>
                     <LinkContainer to="/products">
                         <Nav.Link href="#products">Products</Nav.Link>
+                    </LinkContainer>
+                    <LinkContainer to="/blogs">
+                        <Nav.Link href="#blogs">Blogs</Nav.Link>
                     </LinkContainer>
                     <LinkContainer to="/podcasts">
                         <Nav.Link href="#podcasts">Podcasts</Nav.Link>
@@ -35,6 +38,7 @@ const NavBar = () => {
                     <LinkContainer to="/sign-up">
                         <Nav.Link href="#signup">SignUp</Nav.Link>
                     </LinkContainer>
+
                 </Nav>
             </Container>
         </Navbar>

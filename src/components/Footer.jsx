@@ -10,10 +10,10 @@ export default function App() {
           <div className='row mt-3'>
             <div className='col-md-3 col-lg-4 col-xl-3 mx-auto mb-4'>
               <h6 className='text-uppercase fw-bold mb-4'>
-                <i className='fas fa-gem me-3'></i>SADAY
+                <i className='fas fa-gem me-3'></i>Mental Health
               </h6>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta vel voluptate deleniti dolores at. Iusto quisquam omnis, quo animi molestiae ut optio minus ex. Soluta aliquam delectus fugit deleniti saepe!
+              Mental health includes our emotional, psychological, and social well-being. It affects how we think, feel, and act. It also helps determine how we handle stress, relate to others, and make healthy choices.
               </p>
             </div>
 
@@ -21,7 +21,7 @@ export default function App() {
             <div className='col-md-3 col-lg-2 col-xl-2 mx-auto mb-4'>
               <h6 className='text-uppercase fw-bold mb-4'>Useful links</h6>
               <p>
-                <a href='/home' className='text-reset'>
+                <a href='/' className='text-reset'>
                   Home
                 </a>
               </p>
@@ -53,9 +53,9 @@ export default function App() {
       </section>
 
       <div className='text-center p-4' style={{ backgroundColor: 'rgba(0, 0, 0, 0.05)' }}>
-        © 2021 Copyright:
+        © 2023 Copyright:
         <a className='text-reset fw-bold' href='https://mdbootstrap.com/'>
-          Saday.com
+          Mental Health.com
         </a>
       </div>
     </MDBFooter>

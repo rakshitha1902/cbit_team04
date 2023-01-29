@@ -15,7 +15,7 @@ function Appointment() {
     return(
 
         <Container className = 'mt-3'>
-             <h1 className = 'text-center mb-4'>Make an Appointment</h1>
+             <h1 className = 'text-center mb-4'>BOOK AN APPOINTMENT</h1>
             <Row>
                 <Col>
                     <img className="img-responsive d-block p-3 w-100" src = "https://demigos.com/media/cache/61/e8/61e8be99d482c40c4f294b577a7d2e92.jpg"/>
