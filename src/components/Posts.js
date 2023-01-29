@@ -28,6 +28,7 @@ function Posts() {
                     <h5 class="card-title">Card title</h5>
                     <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
                 </div>
+                
                 </div>
             </div>
             <div class="col mb-4">

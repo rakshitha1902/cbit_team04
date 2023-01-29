@@ -5,4 +5,4 @@ Content-Type: application/json
     "username" : "Rakshitha",
     "email" : "rakshitha@gmail.com",
     "password" : "123"
-}
+} 

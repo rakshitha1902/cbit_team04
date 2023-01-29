@@ -26,7 +26,6 @@ function ControlledCarousel() {
           src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/mental-health-podcasts-1610659657.jpg"
           alt="Second slide"
         />
-
         <Carousel.Caption>
           <h3>Podcasts</h3>
         </Carousel.Caption>

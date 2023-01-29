@@ -7,5 +7,5 @@ export default (users = [] , action) => {
             return [...users, action.payload]
         default:
             return users;
-    }
+    } 
 }
